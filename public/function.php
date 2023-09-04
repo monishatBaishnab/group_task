@@ -18,13 +18,13 @@ if (isset($_POST['sign_up'])) {
     file_put_contents(DBNAME, json_encode($users));
     header("location: sign_in.php");
 }
-if(isset($_POST['sign_in'])){
+if (isset($_POST['sign_in'])) {
     $user_name = $_POST['user'] ?? '';
     $password = $_POST['password'] ?? '';
     foreach ($users as $user) {
-        if($user['user'] === $user_name && $user['password'] === $password){
+        if ($user['user'] === $user_name && $user['password'] === $password) {
             header('location: userlist.php?task=success');
-        }else{
+        } else {
             header('location: userlist.php?task=error');
         }
     }

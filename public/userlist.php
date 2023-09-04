@@ -21,24 +21,30 @@ $users = json_decode(file_get_contents(DBNAME), true);
             <?php if ($task === 'success'): ?>
                 <div style="width: 100%;">
                     <h2 style="text-align: center; font-size: 25px; margin-bottom: 10px;">User List</h2>
-                <table class="w-full">
-                    <tr>
-                        <th class="border p-2">Name</th>
-                        <th class="border p-2">UserName</th>
-                        <th class="border p-2">Password</th>
-                    </tr>
-                    <?php 
+                    <table class="w-full">
+                        <tr>
+                            <th class="border p-2">Name</th>
+                            <th class="border p-2">UserName</th>
+                            <th class="border p-2">Password</th>
+                        </tr>
+                        <?php
                         foreach ($users as $user):
-                    ?>
-                    <tr>
-                        <td class="text-center border p-2"><?php echo $user['name']; ?></td>
-                        <td class="text-center border p-2"><?php echo $user['user']; ?></td>
-                        <td class="text-center border p-2"><?php echo $user['password']; ?></td>
-                    </tr>
-                    <?php 
+                            ?>
+                            <tr>
+                                <td class="text-center border p-2">
+                                    <?php echo $user['name']; ?>
+                                </td>
+                                <td class="text-center border p-2">
+                                    <?php echo $user['user']; ?>
+                                </td>
+                                <td class="text-center border p-2">
+                                    <?php echo $user['password']; ?>
+                                </td>
+                            </tr>
+                        <?php
                         endforeach;
-                    ?>
-                </table>
+                        ?>
+                    </table>
                 </div>
             <?php else: ?>
                 <p>User/Password Not Match! Please Try agein.</p>
