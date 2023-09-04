@@ -27,12 +27,12 @@
             <div class="">
                 <h2 class="text-3xl text-[#2A3342] font-bold">Sign in to your account</h2>
                 <p class="text-[#556987] text-lg text-center mt-2 mb-4">Start your demo version</p>
-                <form action="./index.html" method="post">
+                <form action="./function.php" method="post">
                     <label class="block text-[#333F51] mt-2" for="user">Username</label>
                     <input class="block px-4 py-2 border border-[#D5DAE1] rounded-md w-full focus:outline-none mt-2" type="text" name="user" id="user" placeholder="user@gmail.com">
                     <label class="block text-[#333F51] mt-2" for="password">Password</label>
                     <input class="block px-4 py-2 border border-[#D5DAE1] rounded-md w-full focus:outline-none mt-2" type="password" name="password" id="password" placeholder="Password">
-                    <button type="submit" class="px-4 py-2 bg-green-500 text-white mt-5 rounded-md w-full">Sign In</button>
+                    <button type="submit" name="sign_in" class="px-4 py-2 bg-green-500 text-white mt-5 rounded-md w-full">Sign In</button>
                 </form>
                 <p class="text-[#333F51] text-center mt-3">Don't have an account? <a href="./index.php" class="text-green-500">Sign up</a></p>
             </div>

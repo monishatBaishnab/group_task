@@ -1,3 +1,6 @@
+<?php 
+// include_once('./function.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,16 +30,16 @@
             <div class="">
                 <h2 class="text-3xl text-[#2A3342] font-bold">Join our community</h2>
                 <p class="text-[#556987] text-lg text-center mt-2 mb-4">Start your journey with our product</p>
-                <form action="./index.html" method="post">
+                <form action="./function.php" method="POST">
                     <label class="block text-[#333F51] mt-2" for="name">Name</label>
                     <input class="block px-4 py-2 border border-[#D5DAE1] rounded-md w-full focus:outline-none mt-2" type="text" name="name" id="name" placeholder="Name">
                     <label class="block text-[#333F51] mt-2" for="user">Username</label>
                     <input class="block px-4 py-2 border border-[#D5DAE1] rounded-md w-full focus:outline-none mt-2" type="text" name="user" id="user" placeholder="user@gmail.com">
                     <label class="block text-[#333F51] mt-2" for="password">Password</label>
                     <input class="block px-4 py-2 border border-[#D5DAE1] rounded-md w-full focus:outline-none mt-2" type="password" name="password" id="password" placeholder="Password">
-                    <button type="submit" class="px-4 py-2 bg-green-500 text-white mt-5 rounded-md w-full">Sign Up</button>
+                    <button type="submit" name="sign_up" class="px-4 py-2 bg-green-500 text-white mt-5 rounded-md w-full">Sign Up</button>
                 </form>
-                <p class="text-[#333F51] text-center mt-3">Don't have an account? <a href="./sign_up.php" class="text-green-500">Sign In</a></p>
+                <p class="text-[#333F51] text-center mt-3">Don't have an account? <a href="./sign_in.php" class="text-green-500">Sign In</a></p>
             </div>
         </div>
     </section>

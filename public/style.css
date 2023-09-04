@@ -583,6 +583,10 @@ video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .h-14 {
   height: 3.5rem;
 }
